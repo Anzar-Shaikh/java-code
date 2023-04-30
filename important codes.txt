@@ -1,0 +1,93 @@
+
+1 ) HERE SEE ONCLICK AND OTHER DETAILS
+<g:link class="md-trigger btn btn-danger btn-icon mrg-b-md" name="deleteLink"
+                                    action="delete" onclick="return confirm('Are you sure?')"
+                                    params="[pinCode: pincode.pinCode]"><i
+                                    class="fa fa-trash"></i></g:link>
+
+
+
+2 ) ALTERNATIVE TO nslookup -> getent hosts
+
+ 3 ) CLOUD UAT is behind actual time by 5:40 hrs
+
+
+4 )HOW TO GET SUM FROM DB.
+ BigDecimal totalLoanAmount = FacilityDetails.createCriteria().get {
+                "eq"("tenantId", this?.tenantId)
+                "eq"("loanApplication", this)
+                projections {
+                    sum("requestedLimit")
+                }
+            } 
+			
+			
+			
+			
+			date picker validation
+			
+$("#startDate").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "c-10:c+10",
+        dateFormat: "${AppUtil.DATEPICKER_DATE_FORMAT}",
+        defaultViewDate: {year: new Date().getFullYear(), month: 01, day: 01},
+        reverseYearRange: true
+    });
+	
+	
+	
+	<g:select noSelection='["": "${message(code: 'default.select.box.text')}"]'
+                                              id="showLoanStatuses_${tabSequence.uuid}"
+                                              name="showLoanStatuses.${tabSequence.uuid}"
+                                              from="${filteredListOfStatus*.toString()}"
+                                              class="form-control chosen-select"
+                                              value="${tabSequence.showLoanStatuses?.tokenize(",")}"
+                                              optionValue="${{
+                                                  message(code: 'loanApplicationStatus.' + it.toString())
+                                              }}"
+                                              multiple="true"
+                                              onchange="createOrUpdateTabSortDetails('${tabSequence?.uuid}')"/>rn
+                                              
+                                              
+                                              
+                                              
+GIT ISSUES ->
+if you use http clone for project, it will ask you user creds every time and not for SSH clone
+to change it from http to ssh use comand -> git remote set-url origin "origin SSH"
+if you want to use HTTP -> then  set username and password "git config --global credential.helper store"
+Save the username and password for a session (cache it); -> "git config --global credential.helper cache"
+
+
+
+
+restet branch to remote brnach
+git reset --hard origin/boiCloudTest
+
+scp -P 1729 /home/anzar/Goldy/Perfios/MicroService/integreat/build/libs/crowd-lending-0.1.war anzarfs@172.17.22.16:~/crowd-lending-0.1.war
+
+failedDocuments?.toString()?.replaceAll("\\[|\\]|\\\"","")?.tokenize(",")
+
+sudo service tomcat restart
+
+
+
+
+
+
+Link to study data structure.
+https://www.geeksforgeeks.org/data-structures/
+
+
+Performs mogno db operations
+MongoOperations
+
+
+StopWatch watch = new StopWatch();
+class to to track the time.
+
+
+Fast excell blog
+https://deepakschoudhary.medium.com/how-i-escaped-apache-poi-and-found-my-dream-3rd-party-excel-writer-5e56dd73e407
+https://github.com/dhatim/fastexcel
+
