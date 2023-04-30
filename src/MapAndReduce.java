@@ -1,3 +1,5 @@
+import com.common.AppUtil;
+
 import java.util.*;
 
 public class MapAndReduce {
