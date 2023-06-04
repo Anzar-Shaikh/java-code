@@ -1,6 +1,7 @@
 import com.common.AppUtil;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class MapAndReduce {
     public static void main(String[] args) {
@@ -41,6 +42,7 @@ public class MapAndReduce {
         System.out.println(" ");
 
         intList.stream().forEach(System.out::print);
+        intList.stream().map(it -> it.byteValue()).collect(Collectors.toList());
     }
 }
 
